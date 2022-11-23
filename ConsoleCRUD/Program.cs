@@ -41,13 +41,14 @@ namespace ConsoleCRUD
 
             //DELETE DELETE (lambda expression)
             var personaToDelete = listadoDePersonas.FirstOrDefault(new Persona().ss);
+            
             //var personaToDelete = listadoDePersonas.Select( w => w.name == "luis");
             listadoDePersonas.Remove(personaToDelete);
 
+
+            // ANALIZAR
             // Para Evitar hacer tanto for loop pues con los DTO se evita hacerlos 
-            // Esto hay que analizarlo
-
-
+            
 
             //READ GET
             Persona personaBuscada = new Persona();
@@ -86,6 +87,7 @@ namespace ConsoleCRUD
 
         public List<Articulo> articulos { get; set; }
 
+        
         // lambda expression o una funcion Anonima
         public bool ss(Persona persona)
         {
