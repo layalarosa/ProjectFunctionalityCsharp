@@ -22,16 +22,21 @@ namespace ConsoleCRUD
 
                 new Persona
                 {
-                    name = "Papo"
+                    name = "Pablo" ,
+                    articulo = new Articulo
+                    {
+                        name = "Gato",
+                        precio=300
+                    }
                 },
 
                 new Persona
                 {
-                    name = "Luis" ,
+                    name = "Maria" ,
                     articulo = new Articulo
                     {
-                        name = "Perro",
-                        precio=400
+                        name = "Rana",
+                        precio=100
                     }
                 }
             };
@@ -58,7 +63,7 @@ namespace ConsoleCRUD
                 if (listadoDePersonas[i].name == "luis")
                 {
                     //personaBuscada = listadoDePersonas[i];
-                    listadoDePersonas[i].name = "lus";
+                    listadoDePersonas[i].name = "luis";
                     break;
                 }
                 for (int a = 0; a < listadoDePersonas[i].articulos.Count; a++)
@@ -74,7 +79,7 @@ namespace ConsoleCRUD
                 }
             } // end for loop
 
-            personaBuscada.name = "Lus";
+            personaBuscada.name = "Luis";
 
         }
     }
