@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -27,6 +28,7 @@ namespace PruebaTecnica
 
             Console.WriteLine(textResult);
 
+            
             // 2. Cuantas veces se repite un caracter
 
             string text2 = "iausioAAduhsdjqaaaddsdsSJAK88192aasa";
@@ -48,6 +50,7 @@ namespace PruebaTecnica
 
             Console.WriteLine($"se repite la letra {character} {n} veces");
 
+            
             // 3. Distancia de Hamming
 
             string text3 = "patitosw";
@@ -68,6 +71,7 @@ namespace PruebaTecnica
 
             Console.WriteLine("Distancia es de: " + distance);
 
+            
             // 4. Contador de Palabras
 
             string text5 = "  un   texto    que         tiene palabras   ";
@@ -79,6 +83,7 @@ namespace PruebaTecnica
 
             Console.WriteLine("Numero de palabras: " + n);
 
+            
             // 5. Contar Numeros
 
             string text6 = "an1298jq???da%22121230001masA";
@@ -87,6 +92,35 @@ namespace PruebaTecnica
             int n3 = regex.Matches(text6).Count;
 
             Console.WriteLine("cantidad: " + n3);
+
+
+            // 6. Cola
+
+            Queue<string> Cola = new Queue<string>();
+
+            Cola.Enqueue("Juan");
+            Cola.Enqueue("Pedro");
+            Cola.Enqueue("Raul");
+
+            while (Cola.Count > 0)
+            {
+                Console.WriteLine(Cola.Dequeue());
+            }
+
+
+
+
+            // 6. Pila
+            Stack<string> Pila = new Stack<string>();
+
+            Pila.Push("Plato 1");
+            Pila.Push("Plato 2");
+            Pila.Push("Plato 3");
+
+            while (Pila.Count > 0)
+            {
+                Console.WriteLine(Pila.Pop());
+            }
 
 
         }
