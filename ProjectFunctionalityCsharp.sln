@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebaTecnica", "PruebaTecn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenWeatherTest", "OpenWeatherTest\OpenWeatherTest.csproj", "{D327FC7C-B056-4F09-9D07-52CA3F02C5F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{F99EA09E-7070-4489-BFDB-9E8D7FEA1206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D327FC7C-B056-4F09-9D07-52CA3F02C5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D327FC7C-B056-4F09-9D07-52CA3F02C5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D327FC7C-B056-4F09-9D07-52CA3F02C5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99EA09E-7070-4489-BFDB-9E8D7FEA1206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99EA09E-7070-4489-BFDB-9E8D7FEA1206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99EA09E-7070-4489-BFDB-9E8D7FEA1206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99EA09E-7070-4489-BFDB-9E8D7FEA1206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
