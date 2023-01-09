@@ -40,17 +40,7 @@ namespace ConsoleCRUD
                     }
                 }
             };
-
-            //CREATE POST
-            listadoDePersonas.Add(new Persona());
-
-            //DELETE DELETE (lambda expression)
-            var personaToDelete = listadoDePersonas.FirstOrDefault(new Persona().ss);
             
-            //var personaToDelete = listadoDePersonas.Select( w => w.name == "luis");
-            listadoDePersonas.Remove(personaToDelete);
-
-
             // ANALIZAR
             // Para Evitar hacer tanto for loop pues con los DTO se evita hacerlos 
             
@@ -80,6 +70,20 @@ namespace ConsoleCRUD
             } // end for loop
 
             personaBuscada.name = "Luis";
+
+            //POST
+            listadoDePersonas.Add(new Persona());
+
+            //PUT
+            //listadoDePersonas.Find(h => h.Id == request.Id)
+
+            
+
+            //DELETE (lambda expression)
+            var personaToDelete = listadoDePersonas.FirstOrDefault(new Persona().ss);
+
+            //var personaToDelete = listadoDePersonas.Select( w => w.name == "luis");
+            listadoDePersonas.Remove(personaToDelete);
 
         }
     }
