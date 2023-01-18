@@ -31,12 +31,6 @@ namespace PruebaTecnica2
             //else
             //    Console.Write("Number is not Palindrome");
 
-
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            //Console.WriteLine("Hello World!");
-            //Console.ReadKey();
-
             int a, b, limite, i, auxiliar;
             Console.WriteLine("Ingrese el número de numeros de Fibonacci que desea mostrar");
             limite = int.Parse(Console.ReadLine());

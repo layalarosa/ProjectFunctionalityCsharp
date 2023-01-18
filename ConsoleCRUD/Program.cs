@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace ConsoleCRUD
 {
@@ -74,14 +76,25 @@ namespace ConsoleCRUD
             //POST
             listadoDePersonas.Add(new Persona());
 
+            //Task<ActionResult<List<Persona>>> UpdateHero(Persona request)
+            //{
+            //    var persona = listadoDePersonas.Find(h => h.name == request.name);
+            //    if (persona == null)
+            //        return BadRequest("Hero not found.");
+
+            //    persona.name = request.name;
+                
+
+            //    return Ok(Persona.ToList());
+            
+            //}
+            
+
             //PUT
             //listadoDePersonas.Find(h => h.Id == request.Id)
 
-            
-
             //DELETE (lambda expression)
             var personaToDelete = listadoDePersonas.FirstOrDefault(new Persona().ss);
-
             //var personaToDelete = listadoDePersonas.Select( w => w.name == "luis");
             listadoDePersonas.Remove(personaToDelete);
 

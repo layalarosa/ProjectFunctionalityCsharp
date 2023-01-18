@@ -15,20 +15,20 @@ namespace PruebaTecnica
 
             // A.forma por medio de un for 
 
-            //for (int i= text.Length-1; i>=0; i--)
-            //{
-            //    textResult += text[i];
-            //}
+            for (int i = text.Length - 1; i >= 0; i--)
+            {
+                textResult += text[i];
+            }
 
             // B.por medio del metodo Reverse
 
-            char[] chars = text.ToCharArray();
-            Array.Reverse(chars);
-            textResult = new string(chars);
+            //char[] chars = text.ToCharArray();
+            //Array.Reverse(chars);
+            //textResult = new string(chars);
 
-            Console.WriteLine(textResult);
+            //Console.WriteLine(textResult);
 
-            
+
             // 2. Cuantas veces se repite un caracter
 
             string text2 = "iausioAAduhsdjqaaaddsdsSJAK88192aasa";
@@ -60,8 +60,6 @@ namespace PruebaTecnica
 
             if (text3.Length != text4.Length)
                 throw new Exception("Longitudes Distintas");
-
-            // A.
 
             for (int i = 0; i < text3.Length; i++)
             {
@@ -106,11 +104,9 @@ namespace PruebaTecnica
             {
                 Console.WriteLine(Cola.Dequeue());
             }
+            
+            // 7. Pila
 
-
-
-
-            // 6. Pila
             Stack<string> Pila = new Stack<string>();
 
             Pila.Push("Plato 1");

@@ -42,11 +42,5 @@ namespace Calculadora
             result = valor1 / valor2;
             return result;
         }
-
-        //public int Resultado(int resultado)
-        //{
-        //    result = resultado;
-        //    return result;
-        //}
     }
 }
