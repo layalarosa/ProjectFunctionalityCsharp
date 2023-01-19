@@ -6,7 +6,20 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            A<int> oA = new A<int>();
+            oA.Algo(4);
+
+            A<string> oA2 = new A<string>();
+            oA2.Algo("1");
+
+        }
+
+        public class A<T>
+        {
+            public void Algo(T unparametro)
+            {
+
+            }
         }
     }
 }

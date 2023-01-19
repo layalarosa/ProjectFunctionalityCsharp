@@ -23,15 +23,15 @@ namespace Delegates
             Console.WriteLine(fn1(new List<int> { 2, 3, 4, 6, 9, 666, 2, 1 }));
 
             // Forma 2
-            BuscaMayorNumero fn2 = delegate (List<int> lista)
-            {
-                return lista.OrderByDescending(d => d).First();
-            };
-            Console.WriteLine(fn2(new List<int> { 2, 3, 4, 6, 999, 666, 2, 1 }));
+            //BuscaMayorNumero fn2 = delegate (List<int> lista)
+            //{
+            //    return lista.OrderByDescending(d => d).First();
+            //};
+            //Console.WriteLine(fn2(new List<int> { 2, 3, 4, 6, 999, 666, 2, 1 }));
 
             // Forma 3
-            BuscaMayorNumero fn3 = f => f.OrderByDescending(d => d).First();
-            Console.WriteLine(fn3(new List<int> { 2, 3, 4, 6, 9, 666, 2, 1 }));
+            //BuscaMayorNumero fn3 = f => f.OrderByDescending(d => d).First();
+            //Console.WriteLine(fn3(new List<int> { 2, 3, 4, 6, 9, 666, 2, 1 }));
 
             Console.Read();
 
